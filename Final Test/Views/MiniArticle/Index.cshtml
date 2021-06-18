@@ -1,0 +1,15 @@
+﻿<div class="tm-section tm-container-inner">
+    <div class="row">
+        <div class="col-md-6">
+            <figure class="tm-description-figure">
+                @Html.Sitecore().Field("Image")
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <div class="tm-description-box">
+                <h4 class="tm-gallery-title">@Html.Sitecore().Field("Title")</h4>
+                <p class="tm-mb-45">@Html.Sitecore().Field("Description")</p>
+            </div>
+        </div>
+    </div>
+</div>

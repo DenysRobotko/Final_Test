@@ -1,0 +1,24 @@
+﻿<div class="container">
+    <div class="placeholder">
+        <div class="parallax-window" data-parallax="scroll">
+            @Html.Sitecore().Field("Background Image")
+            <div class="tm-header">
+                <div class="row tm-header-inner">
+                    <div class="col-md-6 col-12">
+                        @Html.Sitecore().Field("Logo")
+                        <div class="tm-site-text-box">
+                            <h1 class="tm-site-title">@Html.Sitecore().Field("Title")</h1>
+                            <h6 class="tm-site-description">@Html.Sitecore().Field("Description")</h6>
+                        </div>
+                    </div>
+                    <nav class="col-md-6 col-12 tm-nav">
+                        <ul class="tm-nav-ul">
+                            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">@Html.Sitecore().Field("First Link")</a></li>
+                            <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">@Html.Sitecore().Field("Second Link")</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
