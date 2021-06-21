@@ -12,7 +12,10 @@
     <link href="~/Content/templatemo-style.css" rel="stylesheet" />
 </head>
 <body>
+    @Html.Sitecore().Placeholder("header")
 
-    <div>@Html.Sitecore().Placeholder("main")</div>
+    @Html.Sitecore().Placeholder("main")
+
+    @Html.Sitecore().Placeholder("footer")
 </body>
 </html>

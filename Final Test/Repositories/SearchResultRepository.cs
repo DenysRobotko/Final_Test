@@ -1,5 +1,4 @@
 ﻿using Final_Test.Models;
-using Sitecore.Data;
 using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
@@ -30,11 +29,11 @@ namespace Final_Test.Repositories
                 return Array.Empty<Item>().ToList();
             }
 
-            var items = parentItem.Axes.GetDescendants().Where(x => x.TemplateID.Equals(new ID("{ED012543-E061-4AE2-BECD-533150C38F42}"))).ToList();
+            var items = parentItem.Axes.GetDescendants().Where(x => x.TemplateID.Equals(Templates.MiniArticle.TemplateId)).ToList();
 
             if (!string.IsNullOrEmpty(searchQuery))
             {
-                items = items.Where(x => x["Title"].Contains(searchQuery)).ToList();
+                items = items.Where(x => x[Templates.MiniArticle.Title.ToString()].Contains(searchQuery)).ToList();
             }
 
             return items;
