@@ -1,6 +1,6 @@
-﻿using Final_Test.Models;
+﻿using FinalTest.Models;
 
-namespace Final_Test.Repositories
+namespace FinalTest.Repositories
 {
     public interface ISearchResultRepository
     {

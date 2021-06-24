@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Sitecore.Data.Items;
 
-namespace Final_Test.Models
+namespace FinalTest.Models
 {
     public class SearchResultRenderingModel
     {

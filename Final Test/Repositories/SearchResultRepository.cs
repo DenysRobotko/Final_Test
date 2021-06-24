@@ -1,10 +1,10 @@
-﻿using Final_Test.Models;
+﻿using FinalTest.Models;
 using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Final_Test.Repositories
+namespace FinalTest.Repositories
 {
     public class SearchResultRepository : ISearchResultRepository
     {
@@ -33,7 +33,7 @@ namespace Final_Test.Repositories
 
             if (!string.IsNullOrEmpty(searchQuery))
             {
-                items = items.Where(x => x[Templates.MiniArticle.Title.ToString()].Contains(searchQuery)).ToList();
+                items = items.Where(x => x[Templates.MiniArticle.ItemFields.Title.ToString()].Contains(searchQuery)).ToList();
             }
 
             return items;

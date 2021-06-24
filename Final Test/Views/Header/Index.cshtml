@@ -1,20 +1,20 @@
 ﻿<div class="container">
     <div class="placeholder">
         <div class="parallax-window" data-parallax="scroll">
-            @Html.Sitecore().Field(Final_Test.Templates.Header.BackgroundImage.ToString())
+            @Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.BackgroundImage.ToString())
             <div class="tm-header">
                 <div class="row tm-header-inner">
                     <div class="col-md-6 col-12">
-                        @Html.Sitecore().Field(Final_Test.Templates.Header.Logo.ToString())
+                        @Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.Logo.ToString())
                         <div class="tm-site-text-box">
-                            <h1 class="tm-site-title">@Html.Sitecore().Field(Final_Test.Templates.Header.Title.ToString())</h1>
-                            <h6 class="tm-site-description">@Html.Sitecore().Field(Final_Test.Templates.Header.Description.ToString())</h6>
+                            <h1 class="tm-site-title">@Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.Title.ToString())</h1>
+                            <h6 class="tm-site-description">@Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.Description.ToString())</h6>
                         </div>
                     </div>
                     <nav class="col-md-6 col-12 tm-nav">
                         <ul class="tm-nav-ul">
-                            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">@Html.Sitecore().Field(Final_Test.Templates.Header.FirstLink.ToString())</a></li>
-                            <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">@Html.Sitecore().Field(Final_Test.Templates.Header.SecondLink.ToString())</a></li>
+                            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">@Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.FirstLink.ToString())</a></li>
+                            <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">@Html.Sitecore().Field(FinalTest.Templates.Header.ItemFields.SecondLink.ToString())</a></li>
                         </ul>
                     </nav>
                 </div>

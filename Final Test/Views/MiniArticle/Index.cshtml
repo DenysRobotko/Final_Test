@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col-md-6">
             <figure class="tm-description-figure">
-                @Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Image.ToString())
+                @Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Image.ToString())
             </figure>
         </div>
         <div class="col-md-6">
             <div class="tm-description-box">
-                <h4 class="tm-gallery-title">@Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Title.ToString())</h4>
-                <p class="tm-mb-45">@Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Description.ToString())</p>
+                <h4 class="tm-gallery-title">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Title.ToString())</h4>
+                <p class="tm-mb-45">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Description.ToString())</p>
             </div>
         </div>
     </div>

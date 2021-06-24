@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Final_Test</RootNamespace>
-    <AssemblyName>Final_Test</AssemblyName>
+    <RootNamespace>FinalTest</RootNamespace>
+    <AssemblyName>FinalTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -161,11 +161,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\FoodItemController.cs" />
-    <Compile Include="Controllers\FooterController.cs" />
-    <Compile Include="Controllers\HeaderController.cs" />
-    <Compile Include="Controllers\MainBodyController.cs" />
-    <Compile Include="Controllers\MiniArticleController.cs" />
     <Compile Include="Controllers\SearchResultController.cs" />
     <Compile Include="Models\SearchResultRenderingModel.cs" />
     <Compile Include="ServicesConfigurator.cs" />

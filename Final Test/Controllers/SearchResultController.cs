@@ -1,7 +1,7 @@
-﻿using Final_Test.Repositories;
+﻿using FinalTest.Repositories;
 using System.Web.Mvc;
 
-namespace Final_Test.Controllers
+namespace FinalTest.Controllers
 {
     public class SearchResultController : Controller
     {

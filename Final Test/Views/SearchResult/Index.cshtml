@@ -1,6 +1,6 @@
-﻿@model Final_Test.Models.SearchResultRenderingModel
+﻿@model FinalTest.Models.SearchResultRenderingModel
 
-<form class="form-inline d-flex justify-content-center" method="post">
+<form class="form-inline d-flex justify-content-center" style="margin:40px;" method="post">
     <div class="form-group">
         <input type="text" class="form-control rounded" name="searchQuery" placeholder="What are you looking for?" />
     </div>
@@ -14,13 +14,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <figure class="tm-description-figure">
-                        @Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Image.ToString(), element)
+                        @Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Image.ToString(), element)
                     </figure>
                 </div>
                 <div class="col-md-6">
                     <div class="tm-description-box">
-                        <h4 class="tm-gallery-title">@Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Title.ToString(), element)</h4>
-                        <p class="tm-mb-45">@Html.Sitecore().Field(Final_Test.Templates.MiniArticle.Description.ToString(), element)</p>
+                        <h4 class="tm-gallery-title">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Title.ToString(), element)</h4>
+                        <p class="tm-mb-45">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Description.ToString(), element)</p>
                     </div>
                 </div>
             </div>
