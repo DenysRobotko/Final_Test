@@ -68,5 +68,15 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{C02A13FD-A69F-4BE7-B978-7EA108427908}");
         }
+
+        public struct Error
+        {
+            public static readonly ID TemplateId = new ID("{D1CA71A5-CAB7-4EAD-90F8-CD088CACD7A8}");
+
+            public struct ItemFields
+            {
+                public static readonly ID ErrorMessage = new ID("{87490B36-EE79-4FBD-9334-29E4A5D4D2EF}");
+            }
+        }
     }
 }
