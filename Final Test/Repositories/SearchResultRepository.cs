@@ -1,6 +1,8 @@
 ﻿using FinalTest.Models;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.SearchTypes;
+using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data.Items;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,32 +13,37 @@ namespace FinalTest.Repositories
         public SearchResultRenderingModel GetModel(string searchQuery)
         {
             var model = new SearchResultRenderingModel();
-            var parentItem = Sitecore.Context.Database.GetItem("/sitecore/content/Home");
             if (string.IsNullOrEmpty(searchQuery) || searchQuery.Equals(" "))
             {
                 model.Items = new List<Item>();
                 return model;
             }
 
-            model.Items = GetArticles(parentItem, searchQuery);
+            model.Items = GetArticles(searchQuery).Items;
+
             return model;
         }
 
-        private List<Item> GetArticles(Item parentItem, string searchQuery = null)
+        private SearchResultRenderingModel GetArticles(string searchQuery = null)
         {
-            if (parentItem == null)
+            var myResults = new SearchResultRenderingModel
             {
-                return Array.Empty<Item>().ToList();
-            }
+                Items = new List<Item>()
+            };
 
-            var items = parentItem.Axes.GetDescendants().Where(x => x.TemplateID.Equals(Templates.MiniArticle.TemplateId)).ToList();
+            var searchIndex = ContentSearchManager.GetIndex("sitecore_master_index");
 
-            if (!string.IsNullOrEmpty(searchQuery))
+            using (var searchContext = searchIndex.CreateSearchContext())
             {
-                items = items.Where(x => x[Templates.MiniArticle.ItemFields.Title.ToString()].Contains(searchQuery)).ToList();
-            }
+                var searchResults = searchContext.GetQueryable<SearchResultItem>().Where(item => item["Title"] == searchQuery).ToList();
 
-            return items;
+                foreach(var element in searchResults)
+                {
+                    myResults.Items.Add(element.GetItem());
+                }
+
+                return myResults;
+            }
         }
     }
 }

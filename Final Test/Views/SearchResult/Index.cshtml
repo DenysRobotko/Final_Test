@@ -1,29 +1,36 @@
 ﻿@model FinalTest.Models.SearchResultRenderingModel
 
-<form class="form-inline d-flex justify-content-center" style="margin:40px;" method="post">
-    <div class="form-group">
-        <input type="text" class="form-control rounded" name="searchQuery" placeholder="What are you looking for?" />
-    </div>
-    <button type="submit" class="btn btn-primary">Search</button>
-</form>
+<div class="container">
+    <div class="row">
 
-<div class="row d-flex justify-content-center ">
-    @foreach (var element in Model.Items)
-    {
-        <div class="tm-section tm-container-inner">
-            <div class="row">
-                <div class="col-md-6">
-                    <figure class="tm-description-figure">
-                        @Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Image.ToString(), element)
-                    </figure>
-                </div>
-                <div class="col-md-6">
-                    <div class="tm-description-box">
-                        <h4 class="tm-gallery-title">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Title.ToString(), element)</h4>
-                        <p class="tm-mb-45">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.ItemFields.Description.ToString(), element)</p>
+        <form class="form-inline d-flex justify-content-center" style="margin:40px;" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control rounded" name="searchQuery" placeholder="What are you looking for?" />
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="row d-flex justify-content-center ">
+            @foreach (var element in Model.Items)
+            {
+                <div class="tm-section tm-container-inner">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <figure class="tm-description-figure">
+                                @Html.Sitecore().Field(FinalTest.Templates.MiniArticle.Fields.Image.ToString(), element)
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tm-description-box">
+                                <h4 class="tm-gallery-title">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.Fields.Title.ToString(), element)</h4>
+                                <p class="tm-mb-45">@Html.Sitecore().Field(FinalTest.Templates.MiniArticle.Fields.Description.ToString(), element)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
-    }
+    </div>
 </div>

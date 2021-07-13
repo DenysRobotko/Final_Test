@@ -8,7 +8,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{F2335507-2C7B-4696-B856-FDFA3735A305}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID Title = new ID("{FD2BB91F-085B-4097-804E-74C5BF58AD91}");
                 public static readonly ID Description = new ID("{6F02F44B-D843-4777-BAA1-2F4CCA8DD62D}");
@@ -21,7 +21,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{306F6281-F7A9-404E-826D-D465741826CA}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID FooterContent = new ID("{25F2691D-D0CC-4261-952A-477B935F5821}");
             }
@@ -31,7 +31,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{2D46F930-02AC-41B2-A5D1-862F6A6D23CB}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID Title = new ID("{8F6F3D29-167C-43D4-8E16-964167E0F1B9}");
                 public static readonly ID Description = new ID("{0E00DDAC-F363-4E2C-BBA5-1A6C5BD3F7B7}");
@@ -46,7 +46,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{CB74F0C3-C813-4243-AF1C-6D62E226A3D6}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID Content = new ID("{D9C1EC9D-F10B-4831-8544-58C2ADCCB620}");
             }
@@ -56,7 +56,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{ED012543-E061-4AE2-BECD-533150C38F42}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID Image = new ID("{43248B05-E014-44F3-9BE9-FD20B9538925}");
                 public static readonly ID Description = new ID("{6DC24343-0B32-4FB8-9842-CD661EC9F79A}");
@@ -73,7 +73,7 @@ namespace FinalTest
         {
             public static readonly ID TemplateId = new ID("{D1CA71A5-CAB7-4EAD-90F8-CD088CACD7A8}");
 
-            public struct ItemFields
+            public struct Fields
             {
                 public static readonly ID ErrorMessage = new ID("{87490B36-EE79-4FBD-9334-29E4A5D4D2EF}");
             }
