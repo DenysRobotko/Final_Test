@@ -188,9 +188,9 @@
     <Compile Include="Controllers\SearchResultController.cs" />
     <Compile Include="Events\ItemSavedHandler.cs" />
     <Compile Include="Models\SearchResultRenderingModel.cs" />
-    <Compile Include="NotFoundHandler.cs" />
-    <Compile Include="Processors\CustomItemResolver.cs" />
-    <Compile Include="ServicesConfigurator.cs" />
+    <Compile Include="Processors\NotFoundHandler.cs" />
+    <Compile Include="Processors\CustomSiteResolver.cs" />
+    <Compile Include="DI\ServicesConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ISearchResultRepository.cs" />
     <Compile Include="Repositories\SearchResultRepository.cs" />
@@ -202,9 +202,9 @@
     <Content Include="App_Config\Include\Final_Test.DependencyInjection.config" />
     <Content Include="App_Config\Include\Final_Test.Error404Handling.config" />
     <Content Include="App_Config\Include\Final_Test.ItemSavedEvent.config" />
-    <Content Include="App_Config\Include\Final_Test.ItemResolverProcess.config" />
+    <Content Include="App_Config\Include\Final_Test.SiteResolverProcess.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Shared\Home.cshtml" />
+    <Content Include="Views\Shared\Layout.cshtml" />
     <None Include="Views\Web.config" />
     <Content Include="Views\Header\Index.cshtml" />
     <Content Include="Views\MainBody\Index.cshtml" />

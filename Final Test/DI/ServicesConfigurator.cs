@@ -1,10 +1,9 @@
 ﻿using FinalTest.Controllers;
-using FinalTest.Models;
 using FinalTest.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
 
-namespace FinalTest
+namespace FinalTest.DI
 {
     public class ServicesConfigurator : IServicesConfigurator
     {

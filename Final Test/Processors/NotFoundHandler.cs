@@ -1,7 +1,7 @@
 ﻿using Sitecore.IO;
 using Sitecore.Pipelines.HttpRequest;
 
-namespace FinalTest
+namespace FinalTest.Processors
 {
     public class NotFoundHandler
     {
